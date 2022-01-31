@@ -1,0 +1,308 @@
+/* CSS Document */
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #ffffff;
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BASIC TEXT FORMATTING */
+div,h1,h2,p,form,label,input,textarea,img,span {
+	margin: 0;
+	padding: 0;
+}
+section, aside, article{
+    display: block;
+}
+section footer{
+	margin:0;
+	padding:0;
+	width:auto;
+	display:block;
+}
+.clear{
+    clear: both;
+}
+
+/* General */
+
+a,a:link a:active {
+	color: #59c9ca;
+	text-decoration: none;
+	border: none;   /* fix for IE8 */
+	outline:none;  /* fix for IE8 */
+}
+a:visited {
+	background-color: inherit;
+	border: none;   /* fix for IE8 */
+	outline:none;  /* fix for IE8 */
+}
+a:hover {
+	text-decoration: underline;
+	border: none;   /* fix for IE8 */
+	outline:none;  /* fix for IE8 */
+}
+a img {
+	border: none;
+}
+a.dark{
+	color: #268586;
+	text-decoration: underline;
+}
+img{
+	border:none;
+}
+h1 {
+    color: #645844;
+    font: bold 28px/1.4em "Jura","sans-serif";
+	line-height: normal;
+	margin: 10px 0 0 0;
+}
+h1.main_h1{
+	border-bottom: 1px solid #59C9CA;
+}
+h2 {
+	color: #645844;
+    font: bold 18px/1.4em "Jura","sans-serif";
+	line-height: 1.8em;
+	margin: 0 0 5px;
+	text-transform: uppercase;
+}
+h3 {
+	color: #2F9B7D;
+    font: bold 16px/1.2em "Jura","sans-serif";
+	line-height: 1.6em;
+	margin: 0 0 10px;
+}
+h4{
+	color: #645844;
+    font: bold 14px/1.0em "Jura","sans-serif";
+	line-height: 1.4em;
+	margin: 0;
+}
+p {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0;
+	padding: 0 0 15px 0;
+}
+ul {
+	list-style: square outside;
+	margin-left: 0;
+	padding-left: 35px;
+	margin-top: 25px;
+}
+ul li {
+	font-size: 12px;
+	margin: 0 0 15px;
+	padding: 0;
+}
+.center{
+	text-align:center;
+}
+.spacer {
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+}
+
+
+/* LAYOUT */
+
+#root {
+	background-color: #FFFFFF;
+	margin: 0 auto;
+    min-height: 971px;
+    visibility: visible;
+    width: 980px;	
+    display: block;
+}
+header, #portfolio_header{
+	display:block;
+	height: 95px;
+	min-height: 95px;
+    width: 980px;
+    font: 16px/1.4em "Jura","sans-serif";
+}
+#name {
+    float: left;
+    width: 460px;
+    min-height: 21px;
+	margin: 45px 10px 10px 0;
+	left: 16px;	
+	top: 38px;   
+}
+#top_name:hover{
+	text-decoration: none;
+	color: #000000;
+}
+nav{
+    position: relative;
+    float:right;
+    top: 30px;
+    min-height: 26px;        
+    width: 494px;
+}
+.mainmenu {
+	font-weight: 500;
+	height: 39px;
+	line-height: 26px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-top: 15px;
+	padding: 0;
+	clear: right;
+	float: right;
+}
+.mainmenu li {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0 0 0 25px;
+	height: 39px;
+	list-style-image: none;
+}
+.mainmenu li a {
+    color: #3a3a3a;
+	display: block;
+	text-align: left;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 0 15px;
+}
+.mainmenu a:hover,.mainmenu a.selected,.mainmenu a.selected:hover {
+	color: #59c9ca;
+}
+.mainmenu li a.selected:active{
+	border:none;
+	outline:none;
+}
+.mainmenu li a:visited{
+	border:none;
+	outline:none;
+}
+.mainmenu li a:hover{
+	border:none;
+	outline:none;
+}
+.mainmenu li a:active{
+	border:none;
+	outline:none;
+}
+#content{
+    margin-top: 120px;
+    position: relative;
+}
+
+/* Homepage */
+#my_logo, #design_info{
+	margin: 30px auto;
+	width: 400px;
+}
+#design_info p{
+    font: 28px/1.8em "Jura","sans-serif";
+    margin-bottom: 80px;
+}
+
+/*About Me page */
+
+.round_image{
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+}
+.about_round{
+    text-align: center;
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+#brown{
+      background-color: #bf9370;
+}
+#turquoise{
+      background-color: #59c9ca;
+}
+#gray{
+      background-color: #3a3a3a;
+}
+.round_image a span{
+	color: #ffffff;      
+	display: block;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+}
+.round_image a:hover{
+	text-decoration: none;	
+}
+.round_image img{
+	vertical-align:middle;
+}
+
+/* My Resume page */
+#my_resume h2 {
+	color: #2F9B7D;
+}
+
+/* Contact page */
+.gray_text{
+	line-height: 17px;
+	padding-bottom: 0;
+	font-weight: bold;
+}
+#contact_page table span{
+	font: 13px/1.4em "Helvetica","Arial","sans-serif";
+    padding: 0 10px 5px 0;
+    text-align: right;
+    vertical-align: top;
+    width: 70px;
+}
+.underlined_section{
+	border-bottom: 1px solid #3a3a3a; 
+	/*width: 670px;*/ 
+	margin-top: 30px;
+}	
+
+/* Gallery */
+.imageRow .single {
+    float: left;
+}
+.imageRow .single a img {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px 4px 4px 4px;
+}
+.imageRow .set .single.first a {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.imageWrapper{
+    width: 602px; 
+    height: 372px; 
+    margin: 0px 0px 50px 0; 
+    overflow: hidden;
+}
+	
+/* Footer */
+footer {
+	width: 929px;
+	margin: 30px auto 0;
+	font-size: 12px;
+	display: block;
+}
+#copyright {
+	text-align: center;
+	height: 15px;
+	padding: 5px 0;
+	font-size: 10px;
+}
+#social_links{
+	margin: 0 auto;
+	display: block;
+	height: 30px;
+	width: 150px;
+} 
+#social_links span a{
+	margin-right: 2px;
+}
