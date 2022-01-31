@@ -108,108 +108,29 @@ ul li {
 }
 
 
-/* LAYOUT */
+/* LAYOUT FOR ALL PAGES */
 
-#root {
-	background-color: #FFFFFF;
-	margin: 0 auto;
-    min-height: 971px;
-    visibility: visible;
-    width: 980px;	
-    display: block;
-}
-header, #portfolio_header{
-	display:block;
-	height: 95px;
-	min-height: 95px;
-    width: 980px;
-    font: 16px/1.4em "Jura","sans-serif";
-}
-#name {
-    float: left;
-    width: 460px;
-    min-height: 21px;
-	margin: 45px 10px 10px 0;
-	left: 16px;	
-	top: 38px;   
-}
-#top_name:hover{
-	text-decoration: none;
-	color: #000000;
-}
-nav{
-    position: relative;
-    float:right;
-    top: 30px;
-    min-height: 26px;        
-    width: 494px;
-}
-.mainmenu {
-	font-weight: 500;
-	height: 39px;
-	line-height: 26px;
-	list-style-image: none;
-	list-style-position: outside;
-	list-style-type: none;
-	margin-top: 15px;
-	padding: 0;
-	clear: right;
-	float: right;
-}
-.mainmenu li {
-	display: block;
-	float: left;
-	margin: 0;
-	padding: 0 0 0 25px;
-	height: 39px;
-	list-style-image: none;
-}
-.mainmenu li a {
-    color: #3a3a3a;
-	display: block;
-	text-align: left;
-	text-decoration: none;
-	font-size: 16px;
-	padding: 0 15px;
-}
-.mainmenu a:hover,.mainmenu a.selected,.mainmenu a.selected:hover {
-	color: #59c9ca;
-}
-.mainmenu li a.selected:active{
-	border:none;
-	outline:none;
-}
-.mainmenu li a:visited{
-	border:none;
-	outline:none;
-}
-.mainmenu li a:hover{
-	border:none;
-	outline:none;
-}
-.mainmenu li a:active{
-	border:none;
-	outline:none;
-}
 #content{
     margin-top: 120px;
     position: relative;
 }
 
 /* Homepage */
+
 #my_logo, #design_info{
 	margin: 30px auto;
 	width: 400px;
 }
-#design_info p{
+
+#design_info p {
     font: 28px/1.8em "Jura","sans-serif";
     margin-bottom: 80px;
 }
 
-/*About Me page */
+/* About Me page */
 
 .round_image{
-    border-radius: 50% 50% 50% 50%;
+    border-radius: 50%;
     overflow: hidden;
 }
 .about_round{
@@ -261,7 +182,6 @@ nav{
 }
 .underlined_section{
 	border-bottom: 1px solid #3a3a3a; 
-	/*width: 670px;*/ 
 	margin-top: 30px;
 }	
 
@@ -282,27 +202,4 @@ nav{
     height: 372px; 
     margin: 0px 0px 50px 0; 
     overflow: hidden;
-}
-	
-/* Footer */
-footer {
-	width: 929px;
-	margin: 30px auto 0;
-	font-size: 12px;
-	display: block;
-}
-#copyright {
-	text-align: center;
-	height: 15px;
-	padding: 5px 0;
-	font-size: 10px;
-}
-#social_links{
-	margin: 0 auto;
-	display: block;
-	height: 30px;
-	width: 150px;
-} 
-#social_links span a{
-	margin-right: 2px;
 }

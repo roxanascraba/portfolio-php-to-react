@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './mainMenu.css';
+
 class MainMenu extends Component {
 
     state = {
@@ -19,19 +21,9 @@ class MainMenu extends Component {
     render() { 
         console.log('main menu - rendered');
         return (
-            <header className="App-header">
-                <div id="portfolio_header">
-                    <div id="name">
-                        <a href="./index.html" id="top_name" style= {{ color:'black' }}>ROXANA SCRABA / FRONT-END DEVELOPER, WEB DESIGNER</a>
-                    </div>
-                    <nav>
-                        <ul className="mainmenu">
-                            { this.state.items.map(item => <li key={item.id}><a href={this.getPageURL(item.pageName)} className={this.getSelectedClass(item.pageName)} > { item.pageName.toUpperCase() } </a></li>)}
-                        </ul>
-                    </nav>
-                    <div className="clear"></div>
-                </div>
-            </header>
+            <ul className="mainmenu">
+                { this.state.items.map(item => <li key={item.id}><a href={this.getPageURL(item.pageName)} className={this.getSelectedClass(item.pageName)} > { item.pageName.toUpperCase() } </a></li>)}
+            </ul>
         );
     };
 

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import fbIcon from '../images/fb_icon.png';
-import linkedInIcon from '../images/linkedin_icon.png';
-import gpIcon from '../images/gplus_icon.png';
-import twitterIcon from '../images/twiter_icon.png';
+import fbIcon from '../../images/fb_icon.png';
+import linkedInIcon from '../../images/linkedin_icon.png';
+import gpIcon from '../../images/gplus_icon.png';
+import twitterIcon from '../../images/twiter_icon.png';
+import './footer.css';
 
 class FooterMenu extends Component {
     

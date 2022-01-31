@@ -3,12 +3,11 @@ import homeIcon from '../images/home_icon.png';
 import logoDesignRoxanaScraba from '../images/logo_design_roxana_scraba.png';
 import arrowImage from '../images/arrow.png';
 
-import '../css/App.css';
 import '../css/style.css';
 
-import MainMenu from './mainMenu';
-import FooterMenu from './footer';
-import SearchBar from './SearchBar/searchBar';
+import Header from './Header/Header';
+import FooterMenu from './Footer/Footer';
+import SearchBar from './SearchBar/SearchBar';
 
 const  listItems = [
   'HTML','HTML5', 
@@ -41,7 +40,7 @@ class HomePage extends Component {
 
     return (
     <div className="HomePage">
-      <MainMenu value="2" />
+      <Header />
       <section>
         <article>
           <img src={this.getPageIcon()} alt="Home" title="Home" width="50" height="50" />
