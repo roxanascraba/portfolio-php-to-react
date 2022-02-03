@@ -26,17 +26,17 @@ class HomePage extends Component {
 
   constructor(props) {
     super(props);
-    console.log('App - constructor', this.props);
+    //console.log('App - constructor', this.props);
     //this.state = this.props;
   };
 
   componentDidMount() {
     // ajax call 
-    console.log('App - Mounted');
+    //console.log('App - Mounted');
   };
 
   render() {
-    console.log("App - rendered");
+    //console.log("App - rendered");
 
     return (
     <div className="HomePage">

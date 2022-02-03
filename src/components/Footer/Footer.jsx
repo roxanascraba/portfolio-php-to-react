@@ -12,7 +12,7 @@ class FooterMenu extends Component {
         actualYear: this.getActualYear()
     };
     render() { 
-        console.log('footer - rendered');
+        //console.log('footer - rendered');
         return (
         <footer>
             <div id="copyright">

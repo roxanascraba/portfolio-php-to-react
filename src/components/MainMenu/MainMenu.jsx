@@ -19,7 +19,7 @@ class MainMenu extends Component {
     // }
 
     render() { 
-        console.log('main menu - rendered');
+        // console.log('main menu - rendered');
         return (
             <ul className="mainmenu">
                 { this.state.items.map(item => <li key={item.id}><a href={this.getPageURL(item.pageName)} className={this.getSelectedClass(item.pageName)} > { item.pageName.toUpperCase() } </a></li>)}
@@ -42,11 +42,5 @@ class MainMenu extends Component {
     }
 
 }
- 
-              /*
-              <li><a href="index.html" class="selected">HOME</a></li>
-              <li><a href="about_me.html" class="">ABOUT ME</a></li>
-              <li><a href="projects.html" class="">PROJECTS</a></li>
-              <li><a href="contact.html" class="">CONTACT</a></li>*/
 
 export default MainMenu;
