@@ -10,9 +10,9 @@ import FooterMenu from './Footer/Footer';
 import SearchBar from './SearchBar/SearchBar';
 
 const  listItems = [
-  'HTML','HTML5', 
-  'CSS','CSS3', 'Sass', 'scss',
-  'JavaScript', 'Vanilla JavaScript', 'jQuery', 'Angular',
+  'HTML','HTML5', 'html', 'html5',
+  'CSS','CSS3', 'css', 'css3', 'Sass', 'scss', 'sass', 'sassy', 'Sassy CSS',
+  'JavaScript', 'javascript','Vanilla JavaScript', 'jQuery', 'Angular',
   'PHP', 'XML', 'WordPress', 'Blogger',
   'Adobe Photoshop', 'Web design','GIT', 'JIRA',
   'adobe','Photoshop', 'adobe photoshop', 'git', 'Mercurial', 'CVS', 'cvn'
