@@ -21,23 +21,14 @@ const  listItems = [
 class HomePage extends Component {
   state = {
     pageName: 'home',
-    pageIcon: homeIcon
+    pageIcon: ''
   };
 
-  constructor(props) {
-    super(props);
-    //console.log('App - constructor', this.props);
-    //this.state = this.props;
-  };
-
-  componentDidMount() {
-    // ajax call 
-    //console.log('App - Mounted');
-  };
+  getPageIcon() {
+    return (this.state.pageName === 'home') ? homeIcon : this.state.pageIcon;
+  }
 
   render() {
-    //console.log("App - rendered");
-
     return (
     <div className="HomePage">
       <Header />
@@ -47,7 +38,7 @@ class HomePage extends Component {
           <SearchBar listItems={listItems}/>
 
           <div id="my_logo">
-            <a href="./about_me.php"><img src={logoDesignRoxanaScraba} alt="Roxana Scraba" title="Roxana Scraba" width="379" height="346" /></a>
+            <a href="./about_me.html"><img src={logoDesignRoxanaScraba} alt="Roxana Scraba" title="Roxana Scraba" width="379" height="346" /></a>
           </div>
         </article>
         <article>
@@ -59,10 +50,6 @@ class HomePage extends Component {
       <FooterMenu />
     </div>
     );
-  }
-
-  getPageIcon() {
-    return (this.state.pageName === 'home') ? homeIcon : this.state.pageIcon;
   }
 
 }

@@ -12,5 +12,6 @@ test('HOMEPAGE: renders without crashing', () => {
 test('HOMEPAGE: renders my logo image on homepage', () => {
   render(<HomePage />);
   const logoElement = screen.getByAltText(/Roxana Scraba/i)
-  expect(logoElement).toBeInTheDocument();
+  expect(logoElement).
+  ent();
 });
