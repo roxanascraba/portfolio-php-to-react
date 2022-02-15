@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import MainMenu from '../MainMenu/MainMenu';
+import MainMenu from './MainMenu';
+import { NavLink } from "react-router-dom";
 
-import './header.css';
+import '../css/style.css';
 
 class Header extends Component {
     state = {  } 
@@ -9,7 +10,9 @@ class Header extends Component {
         return (
             <div id="portfolioHeader">
                 <div id="name">
-                    <a href="./index.html" id="top_name" style= {{ color:'black' }}>ROXANA SCRABA / FRONT-END DEVELOPER, WEB DESIGNER</a>
+                    <NavLink className="" to="/">
+                        <span id="top_name" style= {{ color:'black' }}>ROXANA SCRABA / FRONT-END DEVELOPER, WEB DESIGNER</span>
+                    </NavLink>
                 </div>
                 <nav id="mainNavigation">
                     <MainMenu />

@@ -82,7 +82,7 @@ h4{
 	margin: 0;
 }
 p {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 18px;
 	margin: 0;
 	padding: 0 0 15px 0;
@@ -112,19 +112,83 @@ ul li {
 
 #root {
 	display: block;
-	width: 980px;	
+	width: 1150px;	
 	min-height: 971px;
 	margin: 0 auto;
 	background-color: #fff;
 }
-#content{
-    margin-top: 120px;
-    position: relative;
+#content_root {
+    display: flex;
+	flex-direction: column;
+	min-height: 900px;
 }
+
+/* HEADER STYLE */
+
+#portfolioHeader {
+	display: flex;
+	font: 16px/1.4em "Jura","sans-serif";
+	margin-top: 30px;
+}
+
+#name {
+	margin: 17px 10px 10px 10px;
+}
+#name a:hover {
+	text-decoration: none;
+}
+#mainNavigation {
+	margin-left: auto;
+}
+
+#top_name:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+/* MAIN MENU STYLE */
+
+.mainmenu {
+	font-weight: 500;
+	height: 39px;
+	line-height: 26px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-top: 15px;
+	padding: 0;
+}
+.mainmenu li {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0 0 0 25px;
+	height: 39px;
+	list-style-image: none;
+}
+.mainmenu li a {
+    color: #3a3a3a;
+	display: block;
+	text-align: left;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 0 15px;
+}
+.mainmenu a:hover,.mainmenu a.active,.mainmenu a.active:hover {
+	color: #59c9ca;
+}
+.mainmenu li a.active:active,
+.mainmenu li a:visited,
+.mainmenu li a:hover,
+.mainmenu li a:active {
+	border:none;
+	outline:none;
+}
+
 
 /* Homepage */
 
-#my_logo, #design_info{
+#my_logo, #design_info {
 	margin: 30px auto;
 	width: 400px;
 }
@@ -136,24 +200,31 @@ ul li {
 
 /* About Me page */
 
-.round_image{
+.about_container {
+	display: flex;
+	flex-direction: row;
+}
+.about_me_text h2 {
+	text-transform: uppercase;
+}
+.round_image {
     border-radius: 50%;
     overflow: hidden;
 }
-.about_round{
+.about_round {
     text-align: center;
     display: block;
     width: 150px;
     height: 150px;
 }
-#brown{
-      background-color: #bf9370;
+#brown {
+    background-color: #bf9370;
 }
-#turquoise{
-      background-color: #59c9ca;
+#turquoise {
+    background-color: #59c9ca;
 }
-#gray{
-      background-color: #3a3a3a;
+#gray {
+    background-color: #3a3a3a;
 }
 .round_image a span{
 	color: #ffffff;      
@@ -168,6 +239,68 @@ ul li {
 .round_image img{
 	vertical-align:middle;
 }
+.quote_block {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+.quote_text {
+	font-style: italic;
+	font-size: 14px;
+	font-weight: 600;
+}
+.quote_author {
+	text-align-last: end;
+	font-size: 14px;
+}
+
+/* SEARCH BAR STYLE */
+
+.searchAbility {
+	border: 1px dashed #2F9B7D;
+	padding: 50px;
+	margin: 30px 70px;
+}
+.searchAbilityContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+    align-items: center;
+}
+.searchInputArea input {
+	padding: 10px;
+	width: 300px;
+	color: gray;
+}
+.searchInputArea input:focus {
+	outline: none;
+}
+.searchInputArea button {
+	background-color: rgb(70, 69, 69);
+	color: white;
+	border-radius: 12px;
+	padding: 13px;
+	border: 0;
+	width: 90px;
+}
+.searchResponse {
+	width: 50vw;
+	text-align: center;
+}
+.searchResponseDiv,
+.negativeAnswerDiv {
+	display: inline-block;
+	background-color: #2F9B7D;
+	color: white;
+	padding: 5px;
+	border-radius: 3px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+.negativeAnswerDiv {
+	background-color: tomato;
+}
+
 
 /* My Resume page */
 #my_resume h2 {
@@ -209,4 +342,25 @@ ul li {
     height: 372px; 
     margin: 0px 0px 50px 0; 
     overflow: hidden;
+}
+
+/* FOOTER STYLE */
+
+footer {
+	margin-top: auto;
+}
+#copyright {
+	text-align: center;
+	height: 15px;
+	padding: 5px 0;
+	font-size: 10px;
+}
+#social_links{
+	margin: 0 auto;
+	display: block;
+	height: 30px;
+	width: 150px;
+} 
+#social_links span a {
+	margin-right: 2px;
 }
