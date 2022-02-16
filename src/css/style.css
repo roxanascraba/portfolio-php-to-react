@@ -198,9 +198,10 @@ ul li {
     margin-bottom: 80px;
 }
 
-/* About Me page */
+/* About and Contact pages*/
 
-.about_container {
+.about_container,
+.contact_container {
 	display: flex;
 	flex-direction: row;
 }
@@ -252,6 +253,18 @@ ul li {
 .quote_author {
 	text-align-last: end;
 	font-size: 14px;
+}
+.contact_img {
+	margin-left: auto;
+}
+.follow {
+	margin-top: 50px;
+}
+.follow_me {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	align-items: center;
 }
 
 /* SEARCH BAR STYLE */

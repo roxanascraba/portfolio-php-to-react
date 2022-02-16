@@ -22,7 +22,6 @@ class FooterMenu extends Component {
                 <span>
                     <a href="http://www.facebook.com/roxana.scraba" target="_blank" rel="noreferrer"><img src={fbIcon} alt="Facebook" title="Facebook" width="30" height="30" /></a>
                     <a href="http://ro.linkedin.com/in/roxanascraba" target="_blank" rel="noreferrer"><img src={linkedInIcon} alt="LinkedIn" title="LinkedIn" width="30" height="30" /></a>
-                    {/* <a href="https://plus.google.com/115180188188226195684/posts" target="_blank"><img src={gpIcon} alt="Google Plus" title="Google Plus" width="30" height="30" /></a> */}
                     <a href="http://www.twitter.com/roxanascraba" target="_blank" rel="noreferrer"><img src={twitterIcon} alt="Twitter" title="Twitter" width="30" height="30" /></a>
                 </span>
             </div>
