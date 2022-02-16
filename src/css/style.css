@@ -282,6 +282,7 @@ ul li {
 	padding: 13px;
 	border: 0;
 	width: 90px;
+	margin-left: 10px;
 }
 .searchResponse {
 	width: 50vw;
@@ -300,7 +301,15 @@ ul li {
 .negativeAnswerDiv {
 	background-color: tomato;
 }
+.allAbilities {
+	display: flex;
+	flex-direction: row;
+	column-gap: 100px;
+	justify-content: space-around;
+}
+.allAbilities_right {
 
+}
 
 /* My Resume page */
 #my_resume h2 {
