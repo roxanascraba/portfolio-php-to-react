@@ -9,13 +9,19 @@ import roxanaPic from '../images/roxana_picture.jpg';
 
 function ContactPage() {
 
-    const { register, handleSubmit, formState: {errors} } = useForm();
+    const { register, handleSubmit, formState: {errors} } = useForm({
+        firstname: "",
+        lastname: "",
+        email: "",
+        subject: "",
+        message: ""
+    });
     const onSubmitData = (data) => {
         console.log("RESULT", data);
         console.log("Stringify data: ",JSON.stringify(data));
         handleSubmitBtn();
     };
-    //console.log('Errors: ',errors);
+    console.log('Errors: ',errors);
 
     const handleSubmitBtn = () => {
         const submitButton = document.querySelector(".submitButton");
@@ -28,54 +34,7 @@ function ContactPage() {
             submitButton.classList.add("active");
         };
     }
-//  class ContactPage extends Component {
-//     constructor(props) {
-//         super(props);
-//         this.state = {
-//             valueFirstName: '',
-//             valueLastName: '',
-//             valueEmail: '',
-//             valueSubject: '',
-//             valueMessage: '',
-//             isCorrect: true
-//         };
-//         this.handleInputFNameChange = this.handleInputFNameChange.bind(this);
-//         this.handleInputLNameChange = this.handleInputLNameChange.bind(this);
-//         this.handleInputEmailChange = this.handleInputEmailChange.bind(this);
-//         this.handleInputSubjectChange = this.handleInputSubjectChange.bind(this);
-//         this.handleMessageChange = this.handleMessageChange.bind(this);
-//         this.handleSubmit = this.handleSubmit.bind(this);
-//     }
 
-//     handleInputFNameChange(event) {    
-//         this.setState({valueFirstName: event.target.value});  
-//     }
-//     handleInputLNameChange(event) {
-//         this.setState({valueLastName: event.target.value}); 
-//     }
-//     handleInputEmailChange(event) {
-//          this.setState({valueEmail: event.target.value});
-//     }
-//     handleInputSubjectChange(event) {
-//         this.setState({valueSubject: event.target.value});
-//     }
-//     handleMessageChange(event) {
-//         this.setState({valueMessage: event.target.value});
-//     }
-//     handleSubmit(event) {
-//         const submitButton = document.querySelector(".submitButton");
-//         const submitButtonText = document.querySelector("#buttonText");
-    
-//         console.log('Data submitted! state: ', this.state);
-//         event.preventDefault();  
-      
-//         submitButton.onclick = () => {
-//           submitButtonText.innerHTML = "Thanks";
-//           submitButton.classList.add("active");
-//         };
-//     }
-
-// render() { 
         return (
             <div className="ContactPage">
                 <section>
@@ -99,12 +58,21 @@ function ContactPage() {
                                     id="fname" 
                                     // name="firstname"  //add register
                                     placeholder="First name"
-                                    // value={this.state.valueFirstName} 
-                                    // onChange={this.handleInputFNameChange} />
-                                    {...register("firstname", { required: true, maxLength: 80 })} 
+                                    {...register("firstname", { 
+                                        required: true, 
+                                        minLength: {
+                                            value:2, 
+                                            message: "Min lenght is 2" 
+                                        },
+                                        maxLength: {
+                                            value:80, 
+                                            message: "Max lenght is 80" 
+                                        } })} 
                                 />
                                 <div className='errorText'>
                                     {errors.firstname?.type === 'required' && "First name is required"}
+                                    {errors.subject?.type === 'minLength' && "First name should be at least 2 chars long."}
+                                    {errors.subject?.type === 'maxLength' && "First name should be max 80 chars long."}
                                 </div>
 
                                 <label htmlFor="lname">Last Name</label>
@@ -113,12 +81,21 @@ function ContactPage() {
                                     id="lname" 
                                     // name="lastname" 
                                     placeholder="Last name"
-                                    // value={this.state.valueLasttName} 
-                                    // onChange={this.handleInputLNameChange} />
-                                    {...register("lastname", { required: true, maxLength: 100 })}
+                                    {...register("lastname", { 
+                                        required: true, 
+                                        minLength: {
+                                            value:2,
+                                            message: 'Max lenght is 2'
+                                        },
+                                        maxLength: {
+                                            value:100,
+                                            message: 'Max lenght is 100'
+                                        } })}
                                 />
                                 <div className='errorText'>
                                     {errors.lastname?.type === 'required' && "Last name is required"}
+                                    {errors.subject?.type === 'minLength' && "Last name should be at least 2 chars long."}
+                                    {errors.subject?.type === 'maxLength' && "Last name should be max 100 chars long."}
                                 </div>
 
                                 <label htmlFor="email">Enter your email:</label>
@@ -127,8 +104,6 @@ function ContactPage() {
                                     id="email" 
                                     // name="email" 
                                     placeholder="Your email"
-                                    // value={this.state.valueEmail} 
-                                    // onChange={this.handleInputEmailChange} />
                                     {...register("email", {
                                         required: true,
                                         pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
@@ -143,14 +118,22 @@ function ContactPage() {
                                     type="text" 
                                     id="subject" 
                                     // name="subject" 
-                                    placeholder="Subject"
-                                    // value={this.state.valueSubject}
-                                    // onChange={this.handleInputSubjectChange} />
-
-                                    {...register("subject", { required: true, maxLength: 200 })}
+                                    placeholder="Subject" 
+                                    {...register("subject", { 
+                                        required: true, 
+                                        minLength: {
+                                            value:4, 
+                                            message: "Min lenght is 4" 
+                                        },
+                                        maxLength: {
+                                            value:200, 
+                                            message: "Max lenght is 200" 
+                                        }})}
                                 />
                                 <div className='errorText'>
                                     {errors.subject?.type === 'required' && "Subject is required"}
+                                    {errors.subject?.type === 'minLength' && "Subject should be at least 4 chars long."}
+                                    {errors.subject?.type === 'maxLength' && "Subject should be max 200 chars long."}
                                 </div>
 
                                 <label htmlFor="message">Message</label>
@@ -159,12 +142,21 @@ function ContactPage() {
                                     // name="message"  
                                     placeholder="Your message"
                                     style={{height:"200px"}}
-                                    // value={this.state.valueMessage}
-                                    // onChange={this.handleMessageChange} ></textarea>
-                                    {...register("message", { required: true, maxLength: 400 })}
+                                    {...register("message", { 
+                                        required: true, 
+                                        minLength: {
+                                            value:4, 
+                                            message:"min lenght is 4"
+                                        },
+                                        maxLength: {
+                                            value:400, 
+                                            message:"max lenght is 400"
+                                        }})}
                                 />
                                 <div className='errorText'>
                                     {errors.message?.type === 'required' && "Message is required"}
+                                    {errors.subject?.type === 'minLength' && "Message should be at least 4 chars long."}
+                                    {errors.subject?.type === 'maxLength' && "Message should be max 400 chars long."}
                                 </div>
 
                                 <button type="Submit" className="submitButton" >
@@ -176,9 +168,8 @@ function ContactPage() {
                                     </div>
                                 </button>
                             </form>
-                            </div>
+                         </div>
                             
-
                         </div>
                         <div className='contact_img'>
                             <img src={roxanaPic} alt="Roxana Scraba" title="Roxana Scraba" width="375" height="380" />
@@ -197,6 +188,5 @@ function ContactPage() {
             </div>
         );
     }
-//}
  
 export default ContactPage;
