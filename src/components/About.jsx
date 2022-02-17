@@ -29,7 +29,7 @@ class AboutPage extends Component {
                 <p>I know a few Chinese words. One of my goals is to visit Great Wall and a shaolin monastery in China and to speak with a shaolin monk.</p>
                 <p>One of my favorite quotes is: </p>
                 <div className='quote_block'>
-                  <div className='quote_img'><img src={quote} width="50" height="45" /></div>
+                  <div className='quote_img'><img src={quote} width="50" height="45" alt="quote" /></div>
                   <div className='quote_text_author'>
                     <div className='quote_text'>Clouds come floating into my life, no longer to carry rain or usher storm, but to add color to my sunset sky.</div>
                     <div className='quote_author'>- Rabindranath Tagore</div>
