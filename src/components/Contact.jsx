@@ -1,5 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { send } from 'emailjs-com';
+
 import contactIcon from '../images/contact_icon.png';
 import linkedInIcon from '../images/linkedin_icon.png';
 import facebookIcon from '../images/fb_icon.png';
@@ -16,12 +18,28 @@ function ContactPage() {
         subject: "",
         message: ""
     });
+    const ServiceID = 'service_jcpr17p';
+    const TemplateID = 'template_4simdo5';
+    const UserID = 'user_EFpF63aCYyJ5x2R8CpnDJ';
+
     const onSubmitData = (data) => {
-        console.log("RESULT", data);
-        console.log("Stringify data: ",JSON.stringify(data));
-        handleSubmitBtn();
+        //console.log("Send data: ", data);
+        //console.log("Stringify data: ",JSON.stringify(data));
+        send(
+            ServiceID,
+            TemplateID,
+            data,
+            UserID    
+        )
+        .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            handleSubmitBtn();
+        })
+        .catch((err) => {
+            console.log('FAILED...', err);
+        });
     };
-    console.log('Errors: ',errors);
+    // console.log('Errors: ',errors);
 
     const handleSubmitBtn = () => {
         const submitButton = document.querySelector(".submitButton");
