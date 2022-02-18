@@ -17,7 +17,6 @@ class Header extends Component {
                 <nav id="mainNavigation">
                     <MainMenu />
                 </nav>
-                <div className="clear"></div>
             </div>
         );
     }
