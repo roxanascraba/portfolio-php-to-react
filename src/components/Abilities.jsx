@@ -5,14 +5,14 @@ import '../css/style.css';
 import SearchBar from './SearchBar';
 
 const  listItems = [
-  'HTML','HTML5', 'html', 'html5',
-  'CSS / CSS3 / css / css3', 'Sass / Sassy CSS / sass / scss / sassy ', 
-  'responsive web design', 'Web design / design ',
-  'JavaScript / javascript / js / JS / Vanilla JavaScript / jQuery', 
-  'AngularJs / angularjs', 'PHP', 'XML', 'WordPress', 'Blogger',
-  'Adobe Photoshop / adobe photoshop / adobe / Photoshop / photoshop', 
-  'GIT / git', 'Mercurial', 'CVS / cvs', 'SVN / svn',
-  'JIRA', 'MySQL / mysql'
+  'HTML','HTML5', 
+  'CSS / CSS3', 'SASS / SASSY CSS / SCSS ', 
+  'RESPONSIVE WEB DESIGN', 'WEB DESIGN / DESIGN',
+  'JAVASCRIPT / JS / VANILLA JAVASCRIPT / jQUERY', 
+  'ANGULARJS', 'PHP', 'XML', 'WORDPRESS', 'BLOGGER',
+  'ADOBE PHOTOSHOP / ADOBE / PHOTOSHOP', 
+  'GIT', 'MERCURIAL', 'CVS', 'SVN',
+  'JIRA', 'MYSQL'
 ];
 
 class Abilities extends Component {

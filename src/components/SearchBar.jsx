@@ -1,26 +1,10 @@
-import React, { /*useState,*/ Component }  from 'react';
+import React, { Component }  from 'react';
 import '../css/style.css'
 
 class SearchBar extends Component {
     state = { 
         value: ''
     };
-    //const [searchValue, setSearchValue] = useState("the search value"); //deconstructing array
-    
-    handleImputChange = (event) => {
-        //console.log(event.target.value);  
-        this.setState({value : event.target.value}); // setSearchValue(event.target.value);
-        //console.log('state.value: ',this.state.value);
-    };
-
-    handleClear = () => {
-        //console.log('Button Clear clicked');
-        this.setState({value : ''}); // clear out the search value
-    }
-
-    handleSearch = () => {
-        //console.log('Button Search clicked');
-    }
 
     shouldDisplay = () => this.state.value.length > 0 ;
 
@@ -39,9 +23,9 @@ class SearchBar extends Component {
                 <input 
                     type="text" 
                     value={this.state.value} 
-                    onChange={this.handleImputChange}
+                    onChange={ (e) => this.setState({value : e.target.value.toUpperCase()})}
                     id="inputSearch" />&nbsp; 
-                {this.shouldDisplay() && <button onClick={this.handleClear}> Clear</button> }
+                {this.shouldDisplay() && <button onClick={(e) => this.setState({value: ''})}> Clear</button> }
             </div>
             <div className="searchResults">
                 {this.shouldDisplay() && filteredListItems.length > 0 &&
