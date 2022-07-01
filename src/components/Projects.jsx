@@ -5,6 +5,57 @@ import projectsIcon from '../images/my_projects_icon.png';
 import ImageGallery from 'react-image-gallery';
 import "../css/image-gallery.css";
 
+import ecommerce1 from "../images/ecommerce_store_1.jpg";
+import ecommerce2 from "../images/ecommerce_store_2.jpg";
+import ecommerce3 from "../images/ecommerce_store_3.jpg";
+import ecommerce4 from "../images/ecommerce_store_4.jpg";
+import ecommerce5 from "../images/ecommerce_store_5.jpg";
+
+import websites1 from "../images/websites_1.jpg";
+import websites2 from "../images/websites_2.jpg";
+import websites3 from "../images/websites_3.jpg";
+import websites4 from "../images/websites_4.jpg";
+import websites5 from "../images/websites_5.jpg";
+import websites6 from "../images/websites_6.jpg";
+import websites7 from "../images/websites_7.jpg";
+import websites8 from "../images/websites_8.jpg";
+import websites9 from "../images/websites_9.jpg";
+
+import ebay1 from "../images/ebay_1.jpg";
+import ebay2 from "../images/ebay_2.jpg";
+import ebay3 from "../images/ebay_3.jpg";
+import ebay4 from "../images/ebay_4.jpg";
+import ebay5 from "../images/ebay_5.jpg";
+import ebay6 from "../images/ebay_6.jpg";
+import ebay7 from "../images/ebay_7.jpg";
+import ebay8 from "../images/ebay_8.jpg";
+import ebay9 from "../images/ebay_9.jpg";
+
+import emails1 from "../images/emails_1.jpg";
+import emails2 from "../images/emails_2.jpg";
+import emails3 from "../images/emails_3.jpg";
+import emails4 from "../images/emails_4.jpg";
+import emails5 from "../images/emails_5.jpg";
+import emails6 from "../images/emails_6.jpg";
+import emails7 from "../images/emails_7.jpg";
+import emails8 from "../images/emails_8.jpg";
+
+import banners1 from "../images/banners_1.jpg";
+import banners2 from "../images/banners_2.jpg";
+import banners3 from "../images/banners_3.jpg";
+import banners4 from "../images/banners_4.jpg";
+import banners5 from "../images/banners_5.jpg";
+import banners6 from "../images/banners_6.jpg";
+import banners7 from "../images/banners_7.jpg";
+import banners8 from "../images/banners_8.jpg";
+import banners9 from "../images/banners_9.jpg";
+import banners10 from "../images/banners_10.jpg";
+
+import graphics1 from "../images/graphics_1.jpg";
+import graphics2 from "../images/graphics_2.jpg";
+import graphics3 from "../images/graphics_3.jpg";
+import graphics4 from "../images/graphics_4.jpg";
+
 import iphone1 from "../images/Barnebys_login.jpg"
 import iphone2 from "../images/Barnebys_search.jpg"
 import iphone3 from "../images/Barnebys_list.jpg"
@@ -12,250 +63,50 @@ import iphone4 from "../images/Barnebys_my_account.jpg"
 import iphone5 from "../images/queue_mockup_iPhone_page1.jpg"
 import iphone6 from "../images/queue_mockup_iPhone_page2.jpg"
 import iphone7 from "../images/queue_mockup_iPhone_page3.jpg"
+
 import welcome1 from "../images/welcome_1.jpg"
 import welcome2 from "../images/welcome_2.jpg"
 import welcome3 from "../images/welcome_3.jpg"
+
+import prints1 from "../images/prints_1.jpg"
+import prints2 from "../images/prints_2.jpg"
+import prints3 from "../images/prints_3.jpg"
+import prints4 from "../images/prints_4.jpg"
+import prints5 from "../images/prints_5.jpg"
+import prints6 from "../images/prints_6.jpg"
+import prints7 from "../images/prints_7.jpg"
+import prints8 from "../images/prints_8.jpg"
+import prints9 from "../images/prints_9.jpg"
+import prints10 from "../images/prints_10.jpg"
+
+import paintings1 from "../images/paintings_1.jpg"
+import paintings2 from "../images/paintings_2.jpg"
+import paintings3 from "../images/paintings_3.jpg"
+import paintings4 from "../images/paintings_4.jpg"
+import paintings5 from "../images/paintings_5.jpg"
+import paintings6 from "../images/paintings_6.jpg"
+import paintings7 from "../images/paintings_7.jpg"
+import paintings8 from "../images/paintings_8.jpg"
+import paintings9 from "../images/paintings_9.jpg"
+import paintings10 from "../images/paintings_10.jpg"
+
 import photo1 from "../images/photography_1.jpg"
 import photo2 from "../images/photography_2.jpg"
 import photo3 from "../images/photography_3.jpg"
 import photo4 from "../images/photography_4.jpg"
 import photo5 from "../images/photography_5.jpg"
 
-const gallery1 = 
-    [
-      {
-        original: 'https://lh5.googleusercontent.com/-63xz8cNG8nI/UGjEZqNCWpI/AAAAAAAAlsY/VG_WQ8-EufA/s640/template_store_6.jpg',
-      },{
-        original: 'https://lh5.googleusercontent.com/-FnNAFu762hw/UGjEp_N5c0I/AAAAAAAAlsg/PBepshNutTk/s640/template_store_7.jpg',
-      },{
-        original: 'https://lh6.googleusercontent.com/-Md87upGlH-I/UGjFOb7AzBI/AAAAAAAAlso/P7Xrp-iKh00/s640/template_store_8.jpg',
-      },{
-        original: 'https://lh3.googleusercontent.com/-Fn73ZzbePGs/UGjHloOcYKI/AAAAAAAAlsw/M6o2AXoAlzc/s720/pear_sunglasses.jpg',
-      },{
-        original: 'https://lh5.googleusercontent.com/-KgUgqQq_xo0/UGjIhcYPhPI/AAAAAAAAls4/ZG2y3HrgDL4/s800/template_store_4.jpg',
-      }
-    ];
-const gallery2 =
-    [
-      {
-        original: 'https://lh3.googleusercontent.com/-FXme_pZ1PrM/UGjXwIOCvpI/AAAAAAAAlwM/dZUGtOaTxRo/s640/index_Vendio_5.jpg',
-      },{
-        original: "https://lh5.googleusercontent.com/-s1KNd55_kpQ/UGl5VDJ_EMI/AAAAAAAAlzw/cnPvbwcP4Zc/s640/index_Vendio_6.3.jpg"
-      },{
-        original: "https://lh3.googleusercontent.com/-WkQ1CLTQkmg/UGl5Kcscu4I/AAAAAAAAlzo/REviaUF2RAE/s640/index_Vendio_3.jpg"
-      },{
-        original: 'https://lh6.googleusercontent.com/-Nf8TYNfR9mI/UGl3kK-ESVI/AAAAAAAAlzY/KDunoznhqQg/s640/vendio_ro.jpg',
-      },{
-        original: "https://lh6.googleusercontent.com/-DhLW3rlidAA/UGl48dYjQ2I/AAAAAAAAlzg/96H9ECtesBo/s800/vendio_ro_echipa_v3.jpg"
-      },{
-        original: "https://lh3.googleusercontent.com/-StJ35Y5TyzM/UGm57t7v2eI/AAAAAAAAl5E/H5ntLO178Zk/s912/websites_zuu.jpg"
-      },{
-        original: "https://lh3.googleusercontent.com/-WTr2sdNY1TM/UGm58ZKAvSI/AAAAAAAAl5M/0hpA_qk4ESg/s912/websites_ferma.jpg"
-      },{
-        original: "https://lh5.googleusercontent.com/-6S0bquI7S_0/UGm584fQbJI/AAAAAAAAl5Q/9kPUJd0zP74/s912/websites_deco.jpg"
-      },{
-        original: "https://lh4.googleusercontent.com/-VfcXub0HzEo/UGl55EDy3AI/AAAAAAAAlz4/CyduZv52fbk/s912/bunatati_ps.jpg"
-      }
-    ];
-const gallery3 =
-    [
-      {
-        original: "https://lh6.googleusercontent.com/-__eXUIsTGKo/UGjqhHcFcfI/AAAAAAAAlyM/tLvr8qMtTNw/s720/template_wildflowers_Vendio.jpg"
-      },{
-        original: "https://lh6.googleusercontent.com/-WmrGmXSh6mc/UGjqxX-YYtI/AAAAAAAAlyU/_QKmQOuU6Oc/s720/template_floral.jpg"
-      },{
-        original: "https://lh3.googleusercontent.com/-f8tHer0iXgQ/UGjqyjD4BiI/AAAAAAAAlyc/b2UI3PP7_5s/s720/template_fall.jpg"
-      },{
-        original: "https://lh6.googleusercontent.com/-rnriUMaciaE/UGjq7XVIJAI/AAAAAAAAlyk/Sx6we89jLcc/s720/halloween_scary.jpg"
-      },{
-        original: "https://lh3.googleusercontent.com/-bWCfkRjoeXg/UGjrA1jHVOI/AAAAAAAAlys/ZybuWpRTquA/s720/fruits_celebration.jpg"
-      },{
-        original: "https://lh3.googleusercontent.com/-5ClzdqSJcT4/UGjrEYSFc5I/AAAAAAAAly0/S0xvgFWcUq4/s720/template_grass.jpg"
-      },{
-        original: "https://lh5.googleusercontent.com/-dK2LBfHJyeQ/UGjrJXfrtoI/AAAAAAAAly8/22kR8K5LkxM/s720/template_back_to_school.jpg"
-      },{
-        original: "https://lh4.googleusercontent.com/-UOZUlWZR04U/UGjrzHt7K_I/AAAAAAAAlzE/75ld1puzg98/s640/showcase_ebay_template_2.jpg"
-      },{
-        original: "https://lh5.googleusercontent.com/-REWOOpDqI_g/UGjr2FNs55I/AAAAAAAAlzM/lOEQSCeiRZ8/s640/showcase_ebay_template_4.jpg"
-      }
-    ];
-const gallery4 =
-    [
-      {
-        original: "https://lh5.googleusercontent.com/-PUuMkKpKduY/UGjVfIb0BTI/AAAAAAAAlvQ/0UFy4PjS4PA/s720/email_template_10.jpg"
-      },{
-        original: "https://lh4.googleusercontent.com/-UnL8q5x9oBg/UGjVZ5cQABI/AAAAAAAAlvI/gqKW04MjW1U/s800/email_template_1.jpg"
-      },{
-        original: "https://lh6.googleusercontent.com/-OyVJdL3QO0Q/UGjViw2mkcI/AAAAAAAAlvY/ePf7Ox_OvH8/s720/email_template_2.jpg"
-      },{
-        original: "https://lh6.googleusercontent.com/-Dh4e6wPM4cM/UGjVn5FaswI/AAAAAAAAlvo/V3oAjJwWMk0/s933/email_template_4.jpg"
-      },{
-        original: "https://lh5.googleusercontent.com/-F_RWDZoUYDY/UGjVlgQ2elI/AAAAAAAAlvg/Bv1Kiwr4h98/s912/email_template_3.jpg"
-      },{
-        original: "https://lh6.googleusercontent.com/-zocLU5igMEM/UGjVw4Wi08I/AAAAAAAAlvw/8OqsrVVlCjI/s933/email_template_7.jpg"
-      },{
-        original: "https://lh6.googleusercontent.com/-76n7Uz9NRto/UGjV1wNiW3I/AAAAAAAAlv4/2VtJMQ2sOhM/s720/email_template_9.jpg"
-      },{
-        original: "https://lh3.googleusercontent.com/-X1nkvbBU0KI/UGjV3SLpfdI/AAAAAAAAlwA/VZE-xIm_7cI/s640/email_template_8.jpg"
-      }
-    ];
-const gallery5 =
-    [
-      {
-        original: "https://lh6.googleusercontent.com/-xtYrWRKuWfQ/UGjOVNaJSXI/AAAAAAAAlto/GB6PTtxY8m4/s512/new_fathers_day_grads_page.jpg"
-      },{
-        original: "https://lh6.googleusercontent.com/-yxRp8LrGPOY/UGjOGUcYRbI/AAAAAAAAltY/g-qsvvPC_eE/s450/mothers_day_home-banner.jpg"
-      },{
-        original: "https://lh4.googleusercontent.com/-Etp5TqiT_K0/UGjL3x8EY_I/AAAAAAAAltI/ZRnStXH4v3w/s600/after-christmas-homepage_2011_v3.jpg"
-      },{
-        original: "https://lh6.googleusercontent.com/-ZOanfuHOuTk/UGjOCcVwZpI/AAAAAAAAltQ/RbfUho7mnrw/s600/mothers_day_home-banner_2.jpg"
-      },{
-        original: "https://lh4.googleusercontent.com/-dayNcad71xo/UGjOR9HMoyI/AAAAAAAAltg/fCSPXB8Y6Fs/s616/fathers_day_gift_ideas.jpg"
-      },{
-        original: "https://lh6.googleusercontent.com/-n3gAiP-ymaM/UGjOfX50t4I/AAAAAAAAltw/MILCXgx-MHM/s600/fathers_day_home_banner_v1.jpg"
-      },{
-        original: "https://lh4.googleusercontent.com/-B3yliZxPPQc/UGjOsXQ2WDI/AAAAAAAAlt4/b29D-bMASe0/s580/blackfriday-newsletter_2.jpg"
-      },{
-        original: "https://lh4.googleusercontent.com/-No_kioCrEiE/UGjOzmVBiWI/AAAAAAAAluA/QTbwysKHiNA/s600/after-christmas-homepage_2011_v1.jpg"
-      },{
-        original: "https://lh3.googleusercontent.com/-hfH8PEojYfU/UGjO4NO-8EI/AAAAAAAAluI/K2Z0zMkN3HI/s600/after-christmas-homepage_2011_v2.jpg"
-      },{
-        original: "https://lh5.googleusercontent.com/-yFBZ-8rmB_U/UGjPAe6TcjI/AAAAAAAAluQ/8QFq4D0bH2A/s600/after-christmas_2011_part2_v3.jpg"
-      }
-      // ,{
-      //   original: "https://lh3.googleusercontent.com/--ALgYX1x4Tk/UGjPCqSULbI/AAAAAAAAluY/LAlcak5IUc8/s600/after-christmas_2011_part2_v2.jpg"
-      // },{
-      //   original: "https://lh3.googleusercontent.com/-Y8qNs2zHzs0/UGjPEoHwh2I/AAAAAAAAlug/lU6sTGFymQQ/s600/after-christmas_2011_part2_v1.jpg"
-      // },{
-      //   original: "https://lh5.googleusercontent.com/-vpQSjuqWScI/UGjPIN6AIII/AAAAAAAAluo/FqnYv7P2ON4/s600/after-christmas_2011_part2_v5.jpg"
-      // },{
-      //   original: "https://lh5.googleusercontent.com/--BKw477uyNE/UGjPQln2fEI/AAAAAAAAluw/jatibxQuDOU/s600/after-christmas_2011_part2_v6.jpg"
-      // },{
-      //   original: "https://lh6.googleusercontent.com/-bkFMe50_v30/UGmJPV6XV_I/AAAAAAAAl0E/MH5Eh_aeHW0/s600/memorial_day_banner.jpg"
-      // },{
-      //   original: "https://lh3.googleusercontent.com/-WgLMDiFuR-M/UGmKlzM-jAI/AAAAAAAAl0M/8Dep7_jr0B4/s600/memorial_day_banner_v1.jpg"
-      // },{
-      //   original: "https://lh3.googleusercontent.com/-WmhSwvdoJ1s/UGmLBJ4hqSI/AAAAAAAAl0U/0IE9kymgJek/s600/memorial_day_banner_v4.jpg"
-      // },{
-      //   original: "https://lh6.googleusercontent.com/-A2d2bTQkgTc/UGmLOu0OadI/AAAAAAAAl0c/z-INctGgdrA/s600/back-to-school-homepage_v2.2.jpg"
-      // },{
-      //   original: "https://lh4.googleusercontent.com/-bEpO5OgHms0/UGmLn3lr5zI/AAAAAAAAl0o/gEzs5Luomws/s600/green-monday-homepage_v4.jpg"
-      // },{
-      //   original: "https://lh3.googleusercontent.com/-dW7qUMx6CC4/UGmLoZOQZLI/AAAAAAAAl0w/1Gk4Vp8iO3A/s600/green-monday-homepage_v3.jpg"
-      // },{
-      //   original: "https://lh3.googleusercontent.com/-L7cb3M9PWyU/UGmLpChZXFI/AAAAAAAAl00/CINbq4p2wl0/s600/cyber-monday-homepage.jpg"
-      // },{
-      //   original: "https://lh4.googleusercontent.com/-cyPBt3PK1zc/UGmMeZZddpI/AAAAAAAAl08/edOOU7rq_58/s580/labor-day-banner_142x580.jpg"
-      // },{
-      //   original: "https://lh4.googleusercontent.com/-5ioSa9tWjOM/UGmOb0uTWPI/AAAAAAAAl1c/ZJNtTL5zhwc/s300/banner_amazon_v2_movement_v2.jpg"
-      // },{
-      //   original: "https://lh6.googleusercontent.com/-9FDYDHGrPGg/UGmOlibKMhI/AAAAAAAAl1s/9sxsv91qL7Q/s300/banner_multi-channel_v5_5_growth.jpg"
-      // },{
-      //   original: "https://lh6.googleusercontent.com/-Fg9MuE0o1cs/UGjPtJlNn5I/AAAAAAAAlu4/JMnNKCNUucE/s580/tax-header_.jpg"
-      // }
-    ];
-const gallery6 =
-    [
-      {
-        original: "https://lh6.googleusercontent.com/-mqm2G2YuFPM/UGjakkxTlOI/AAAAAAAAlwg/UCMX1KRFFCI/s500/shield.jpg"
-      },{
-        original: "https://lh4.googleusercontent.com/-wyRAYcoGRD4/UGmQJbiBPII/AAAAAAAAl2I/XVUTSFlYMGY/s800/image_hosting_lp_blue_bgd.jpg"
-      },{
-        original: "https://lh6.googleusercontent.com/-jUB1osLYYpc/UGmVVLyUBAI/AAAAAAAAl3c/K46oMYCfV8M/s174/graphics_icons.jpg"
-      },{
-        original: "https://lh6.googleusercontent.com/-XXo8kS4Cgzc/UGmRF8BRFeI/AAAAAAAAl2U/IfjE9wxtWXg/s1222/vendio_icons.jpg"
-      }
-    ];
-const gallery7 =
-    [
-      {
-        original: iphone1
-      },{
-        original: iphone2
-      },{
-        original: iphone3
-      },{
-        original: iphone4
-      },{
-        original: iphone5
-      },{
-        original: iphone6
-      },{
-        original: iphone7
-      }
-    ];
-const gallery8 =
-    [
-      {
-        original: welcome1
-      },{
-        original: welcome2
-      },{
-        original: welcome3
-      }
-    ];
-const gallery9 =
-    [
-      {
-        original: "https://lh5.googleusercontent.com/-szEG32fFG0M/UGmlrBoXQ2I/AAAAAAAAl3w/DyUZgBd3Ei4/s640/P1170133.JPG"
-      },{
-        original: "https://lh5.googleusercontent.com/-czoFuL11nuQ/UGmlr5O8eyI/AAAAAAAAl34/Po2GxsK0qa8/s640/P1170137.JPG"
-      },{
-        original: "https://lh4.googleusercontent.com/-OlR9ItM6gCk/UGmlsTkxsVI/AAAAAAAAl4A/QijZSGtBlhg/s640/P1170140.JPG"
-      },{
-        original: "https://lh4.googleusercontent.com/-dediHAU9nj4/UGmltBzi6DI/AAAAAAAAl4I/Krg3wmXxWsg/s640/P1170141.JPG"
-      },{
-        original: "https://lh3.googleusercontent.com/-BvTyL8fDNqs/UGmltlpjbqI/AAAAAAAAl4Q/oOCPsqYXs40/s640/P1170142.JPG"
-      },{
-        original: "https://lh3.googleusercontent.com/-qRrxZgY0VjY/UGmluXV4TtI/AAAAAAAAl4Y/3ZByQfUR5FI/s640/P1170143.JPG"
-      },{
-        original: "https://lh3.googleusercontent.com/-4H-PFwiOIA0/UGmluwsGP1I/AAAAAAAAl4g/06LTTy9_nwM/s640/P1170144.JPG"
-      },{
-        original: "https://lh5.googleusercontent.com/-H21mj9MD74c/UGmlvtHJyDI/AAAAAAAAl4o/JcUi8N_qkv8/s640/P1170146.JPG"
-      },{
-        original: "https://lh4.googleusercontent.com/-YPqhRqC_wpM/UGmlwFqqNNI/AAAAAAAAl4w/56fbqVMko50/s640/P1170147.JPG"
-      },{
-        original: "https://lh5.googleusercontent.com/-7yDMrJSr_Es/UGi5JARQbGI/AAAAAAAAlsE/RYnb--I-eWQ/s640/P1170087.JPG"
-      }
-    ];
-const gallery10 =
-    [
-      {
-        original: "https://lh5.googleusercontent.com/-9x1bPeEaXM8/UGi1qTGXZNI/AAAAAAAAloQ/Gb_qb3joDXs/s640/P1170090.JPG"
-      },{
-        original: "https://lh5.googleusercontent.com/-3pU_Zr8obms/UGi15vdKlGI/AAAAAAAAlrQ/t-1_YpI55dQ/s640/P1170116.JPG"
-      },{
-        original: "https://lh3.googleusercontent.com/-p4eNf21V7sA/UGi1pd8hCnI/AAAAAAAAloI/HYGhskbBnRE/s640/P1170089.JPG"
-      },{
-        original: "https://lh4.googleusercontent.com/-R8STPo0XKDc/UGi13nS5BNI/AAAAAAAAlqw/BHbD-XhG_sI/s640/P1170112.JPG"
-      },{
-        original: "https://lh5.googleusercontent.com/-XR3J5hGNIRQ/UGi14JmILbI/AAAAAAAAlq4/X6KFtKowEvo/s640/P1170113.JPG"
-      },{
-        original: "https://lh6.googleusercontent.com/-BAzJAyF6JVY/UGi14lejs8I/AAAAAAAAlrA/7N8HCmqyACY/s640/P1170114.JPG"
-      },{
-        original: "https://lh3.googleusercontent.com/-Z8as2WlfdVw/UGi15K5S9cI/AAAAAAAAlrI/ELQ2rxhreJw/s640/P1170115.JPG"
-      },{
-        original: "https://lh4.googleusercontent.com/-rIdEe129T3I/UGi1okx1lMI/AAAAAAAAln8/ur3GVZ1fn6Y/s640/P1170088.JPG"
-      },{
-        original: "https://lh6.googleusercontent.com/-zxV0Bg6_GCo/UGi1wBphdnI/AAAAAAAAlpY/nIV4kDLTK5Q/s640/P1170101.JPG"
-      },{
-        original: "https://lh5.googleusercontent.com/-ZsHTb_7RDjg/UGi16JzULII/AAAAAAAAlrU/ve9cNcVIVug/s640/P1170117.JPG"
-      }
-    ];
-const gallery11 =
-    [
-      {
-        original: photo4
-      },{
-        original: photo1
-      },{
-        original: photo2
-      },{
-        original: photo3
-      },{
-        original: photo5
-      }
-    ];
+const gallery1 = [{original: ecommerce1},{original: ecommerce2},{original: ecommerce3},{original: ecommerce4},{original: ecommerce5}];
+const gallery2 = [{original: websites1},{original: websites2},{original: websites3},{original: websites4},{original: websites5},{original: websites6},{original: websites7},{original: websites8},{original: websites9}];
+const gallery3 = [{original: ebay1},{original: ebay2},{original: ebay3},{original: ebay4},{original: ebay5},{original: ebay6},{original: ebay7},{original: ebay8},{original: ebay9}];
+const gallery4 = [{original: emails1},{original: emails2},{original: emails3},{original: emails4},{original: emails5},{original: emails6},{original: emails7},{original: emails8}];
+const gallery5 = [{original: banners1},{original: banners2},{original: banners3},{original: banners4},{original: banners5},{original: banners6},{original: banners7},{original: banners8},{original: banners9},{original: banners10}];
+const gallery6 = [{original: graphics1},{original: graphics2},{original: graphics3},{original: graphics4}];
+const gallery7 = [{original: iphone1},{original: iphone2},{original: iphone3},{original: iphone4},{original: iphone5},{original: iphone6},{original: iphone7}];
+const gallery8 = [{original: welcome1},{original: welcome2},{original: welcome3}];
+const gallery9 = [{original: prints1},{original: prints2},{original: prints3},{original: prints4},{original: prints5},{original: prints6},{original: prints7},{original: prints8},{original: prints9},{original: prints10}];
+const gallery10 = [{original: paintings1},{original: paintings2},{original: paintings3},{original: paintings4},{original: paintings5},{original: paintings6},{original: paintings7},{original: paintings8},{original: paintings9},{original: paintings10}];
+const gallery11 = [{original: photo4},{original: photo1},{original: photo2},{original: photo3},{original: photo5}];
 
 class ProjectsPage extends Component {
     state = { 

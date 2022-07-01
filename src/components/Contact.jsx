@@ -89,8 +89,8 @@ function ContactPage() {
                                 />
                                 <div className='errorText'>
                                     {errors.firstname?.type === 'required' && "First name is required"}
-                                    {errors.subject?.type === 'minLength' && "First name should be at least 2 chars long."}
-                                    {errors.subject?.type === 'maxLength' && "First name should be max 80 chars long."}
+                                    {errors.firstname?.type === 'minLength' && "First name should be at least 2 chars long."}
+                                    {errors.firstname?.type === 'maxLength' && "First name should be max 80 chars long."}
                                 </div>
 
                                 <label htmlFor="lname">Last Name</label>
@@ -112,8 +112,8 @@ function ContactPage() {
                                 />
                                 <div className='errorText'>
                                     {errors.lastname?.type === 'required' && "Last name is required"}
-                                    {errors.subject?.type === 'minLength' && "Last name should be at least 2 chars long."}
-                                    {errors.subject?.type === 'maxLength' && "Last name should be max 100 chars long."}
+                                    {errors.lastname?.type === 'minLength' && "Last name should be at least 2 chars long."}
+                                    {errors.lastname?.type === 'maxLength' && "Last name should be max 100 chars long."}
                                 </div>
 
                                 <label htmlFor="email">Enter your email:</label>
@@ -173,8 +173,8 @@ function ContactPage() {
                                 />
                                 <div className='errorText'>
                                     {errors.message?.type === 'required' && "Message is required"}
-                                    {errors.subject?.type === 'minLength' && "Message should be at least 4 chars long."}
-                                    {errors.subject?.type === 'maxLength' && "Message should be max 400 chars long."}
+                                    {errors.message?.type === 'minLength' && "Message should be at least 4 chars long."}
+                                    {errors.message?.type === 'maxLength' && "Message should be max 400 chars long."}
                                 </div>
 
                                 <button type="Submit" className="submitButton" >
